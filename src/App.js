@@ -1,5 +1,13 @@
+import { Header, AddTask, ShowTask } from "./components";
+
 function App() {
-  return <>Hello World!</>;
+  return (
+    <div>
+      <Header />
+      <AddTask />
+      <ShowTask />
+    </div>
+  );
 }
 
 export default App;
