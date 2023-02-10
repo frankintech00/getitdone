@@ -112,7 +112,8 @@ header span.title.dark {
   padding: 20px 15px;
   border-radius: 5px;
   background-color: #ffffff;
-  max-width: 80%;
+  max-width: fit-content;
+  min-width: 80%;
   margin: 20px auto;
   box-shadow: var(--box-shadow);
 }
@@ -293,14 +294,21 @@ header span.title.dark {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 992px) {
   .showTask li {
     width: 40%;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 565px) {
   .showTask li {
-    width: 40%;
+    width: 100%;
+  }
+  header {
+    flex-direction: column;
+  }
+
+  header .themeSelector span {
+    margin: 10px 5px;
   }
 }

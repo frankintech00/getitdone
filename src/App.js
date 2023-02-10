@@ -18,7 +18,7 @@ function App() {
   // State to store the theme of the app
   const [theme, setTheme] = useState(
     // Get the theme from local storage, or the default value "medium" if there is no data in local storage
-    JSON.parse(localStorage.getItem("theme")) || "medium"
+    JSON.parse(localStorage.getItem("theme")) || "dark"
   );
 
   // Function to handle adding or updating a task
