@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Header, AddTask, ShowTask } from "./components";
+import { Header, AddTask, ShowTask, Footer } from "./components";
 
 // App component that renders the to-do app
 function App() {
@@ -124,6 +124,7 @@ function App() {
           handleEdit={handleEdit}
           handleDelete={handleDelete}
         />
+        <Footer theme={theme} />
       </div>
     </div>
   );
