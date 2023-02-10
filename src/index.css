@@ -109,7 +109,7 @@ header span.title.dark {
 }
 
 .addTask {
-  padding: 20px 15px;
+  padding: 10px;
   border-radius: 5px;
   background-color: #ffffff;
   max-width: fit-content;
@@ -132,6 +132,7 @@ header span.title.dark {
 
 .addTask form {
   display: flex;
+  flex-direction: row;
   gap: 7px;
 }
 
@@ -363,6 +364,10 @@ footer .social-icon {
   .showTask li {
     width: 40%;
   }
+
+  .container {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 848px) {
@@ -375,5 +380,14 @@ footer .social-icon {
 
   header .themeSelector span {
     margin: 10px 5px;
+  }
+
+  .addTask form {
+    flex: auto;
+    flex-direction: column;
+  }
+
+  .addTask form input {
+    font-size: 16px;
   }
 }
