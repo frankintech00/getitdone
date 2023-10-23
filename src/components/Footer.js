@@ -14,9 +14,9 @@ const Footer = ({ theme }) => {
             <img
               className="logo"
               src={FrankKellyLogo}
-              alt="Frank Kelly Logo"
+              alt="Francis Kelly Logo"
             ></img>
-            <span className="text">Frank Kelly</span>
+            <span className="text">Francis Kelly</span>
           </a>
         </div>
       </div>
